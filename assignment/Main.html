@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>과제</title>
+
+    <!-- 외부 스타일 시트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+    <link href="../assignment/resources/style.css" rel="stylesheet" type="text/css">
+    <!-- 리셋 CSS : 브라우저별로 디폴트로 적용 된 CSS(여백, 폰트 등)에 차이가 있으므로
+    브라우저별로 다르게 보일 수 있어 리셋 CSS를 활용한다. -->
+    <link href="https://unpkg.com/ress/dist/ress.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div id="home" class="big-bg">
+        <header class="page-header wrapper">
+            <h1>
+                <a class="logo" href="#">Portfolio</a>
+            </h1>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="#aboutMe">About Me</a></li>
+                    <li><a href="Project.html">Project</a></li>
+                    <li><a href="#archiving">Archiving</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div class="home-contents wrapper">
+                <div class="home-contents1">
+                    <h1 class="page-title">안녕하세요</h1>
+                    <h1 class="page-title1">Developer</h1>
+                    <h1 class="page-title2">정민교입니다</h1>
+                </div>
+            </div>
+            <div class="home-contents2 wrapper"></div>
+
+            <article>
+                <div class="home-contents3 wrapper">
+                    <h2 class="page-title3" id="aboutMe">About Me</h2>
+
+                    <div class="text-wrap">
+                            <span class="text"></span>
+                    </div>
+    
+
+                </div>
+            </article>
+
+            <article>
+
+                <div class="home-contents4 wrapper">
+                    <h2 class="page-title3" id="archiving">Archiving</h2>
+                    <br>
+                    <br>
+                    <div class="Github">
+
+                        <a href="https://github.com/alsry2325">Github
+                            <img src="image/github.png" />
+
+                            <div class="GithubName">
+                                소스 코드 저장소
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="Notion">
+                        <a href="https://www.notion.so/c01514d5bf9640979c1881244608aac5">Notion
+                            <img src="image/노션이미지.png" />
+
+                            <div class="NotionName">
+                                공부 및 지식정리
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+            </article>
+
+            <article>
+                <div class="home-contents3 wrapper" id="Contact">
+                   
+                        <h2 class="page-title3" >Contact</h2>
+                    
+                    <div class="Contacts">
+                        <div class="name">
+                            <img src="image/user.png"/>
+                            <br>
+                            이름:정민교
+                        </div>
+                        <div>
+                            <img src="image/calendar.png"/>
+                            <br>
+                            생년월일:1997.10.25
+                        </div>
+                        <div>
+                            <img src="image/address.png"/>
+                            <br>
+                            주소지:서울시 용산구 이태원동
+                        </div>
+                        <div>
+                            <img src="image/phone.png">
+                            <br>
+                            연락처: 010-6663-9627
+                        </div>
+                        <div>
+                            <img src="image/email.png">
+                            <br>
+                            이메일: alsry0@naver.com
+                        </div>
+                        <div>
+                            <img src="image/school.png">
+                            <br>
+                            학력: 한국폴리텍 정수캠퍼스
+                        </div>
+                    </div>
+    
+
+                </div>
+            </article>
+        </section>
+
+        <script>
+            const content = "나는 쾌락을 비난하고 고통을 찬양하는\n이 모든 잘못된 생각이 어떻게 탄생했는지\n설명해야 하며 시스템에 대한 완전한 설명을 제공할 것입니다.";
+            const text = document.querySelector(".text");
+            let i = 0;
+
+            function typing() {
+                let txt = content[i++];
+                text.innerHTML += txt === "\n" ? "<br/>" : txt;
+                if (i > content.length) {
+                    text.textContent = "";
+                    i = 0;
+                }
+            }
+            setInterval(typing, 100)
+        </script>
+</body>
+
+</html>

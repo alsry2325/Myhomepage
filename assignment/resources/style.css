@@ -1,0 +1,250 @@
+@charset "UTF-8";   /* 인코딩 문자 깨짐 방지 */
+
+html {
+    /* 사용자가 설정한 문자 크기 그대로 반영 될 수 있도록 */
+    font-size : 100%;
+    scroll-behavior: smooth;
+    text-decoration : none;
+}
+
+body {
+    color : #432;
+    line-height: 2.0;
+}
+
+a{
+    text-decoration : none;
+    color: black;
+}
+
+
+/* 로고 크기 및 여백 */
+.logo {
+    width : 210px;
+    margin-top : 14px;
+    color : #282828;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* nav 메뉴 */
+.main-nav {
+   
+    display: flex;
+    list-style-type: none;
+    font-size : 1.25rem;
+    text-transform: capitalize;
+    margin-top: 15px;
+    
+}
+
+/* 로고와 내비의 수평 정렬 */
+.page-header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2eeeb;
+    
+}
+
+.main-nav li {
+    margin-left : 36px;
+}
+
+.main-nav a {
+    color : #432;
+}
+
+.main-nav a:hover {
+    color :white;
+}
+
+/* 콘텐츠의 최대 출력 너비 설정 */
+.wrapper {
+    margin : 0 auto;
+    padding : 0 4%;
+}
+
+/*content 영역*/
+.home-contents{
+
+    margin : 0 auto;
+    height: 400px;
+    background-color: #f2eeeb;
+    padding : 0 4%;
+}
+.home-contents1{
+
+    margin : 0 auto;
+    height: 400px;
+    background-color: #f2eeeb;
+
+}
+.home-contents2{
+
+    margin : 0 auto;
+    height: 400px;
+    background-color: red;
+
+}
+/*메인 글씨*/ 
+.page-title {
+    padding-top: 230px;
+    padding-left: 100px;
+    text-align : left;
+    font-size: 3rem;
+    
+}
+.page-title1{
+    letter-spacing: 2px;
+    text-align : center;
+    padding-right: 400px;
+    font-size: 4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.page-title2{
+
+    padding-right: 150px;
+    text-align : center;
+    font-size: 3rem;
+
+}
+/*두번째 페이지*/
+
+.text-wrap{
+    height: 250px;
+    font-size: 150%;
+    text-align: center;
+    padding: 200px;
+}
+
+.home-contents3{
+
+    margin : 0 auto;
+    height: 800px;
+    background-color: #f2eeeb;
+    padding : 0 4%;
+}
+.page-title3{
+    padding-top: 100px;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.About{
+    padding-top: 200px;
+    text-align: left;
+    font-size: 2rem;
+    font-family: 'SUITE-Regular';
+}
+
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*세번째 페이지*/
+
+.home-contents4{
+
+    background-image: linear-gradient(to right, red 20%, #f2eeeb 20%);
+    height: 800px;
+
+}
+
+.Github{
+    
+    font-size: 2rem;
+    text-align: center;
+    display: inline-block;
+    padding-left: 400px;
+    padding-top: 100px;
+}
+
+.GithubName{
+    font-family: Georgia;
+    font-size: 1.5rem;
+}
+
+.Notion{
+    font-size: 2rem;
+    text-align: right;
+    display: inline-block;
+    padding-left: 200px;
+}
+
+.NotionName{
+    font-family: Georgia;
+    font-size: 1.5rem;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+}
+
+
+/*네번째 페이지*/
+ #Contact{
+
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.Contacts{
+    font-family: 'SUITE-Regular';
+    padding-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 1100px;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-left: 100px;
+}
+
+/*다섯번째 페이지*/
+.home-Project{
+
+    margin : 0 auto;
+    height: 1000px;
+    background-color: #f2eeeb;
+    padding : 0 4%;
+}
+.Project-title{
+
+    font-family: 'SUITE-Regular';
+    font-size: 20px;
+    top: 25%;
+    padding: 30px;
+}
+
+.img{
+    padding: 50px;
+    width: 600px;
+    height: auto;
+    float: left;
+}
+
+#imgSize{
+    
+    width: 500px;
+    height: auto;
+}
+
+
+.Project-detail{
+    float: left;
+    padding-top: 150px;
+    padding-left: 50px;
+}
+
+.test button{
+
+    padding-top: 500px;
+    padding-right: 30px;
+    font-size: 25px;
+}
